@@ -10,7 +10,8 @@ public class DependencyInversionViolation {
         lightSwitch.turnOn();
     }
 }
-
+`
+`java
 class LightBulb {
     public void turnOn() {
         System.out.println("LightBulb is ON");
@@ -20,7 +21,8 @@ class LightBulb {
         System.out.println("LightBulb is OFF");
     }
 }
-
+`
+`java
 class Switch {
     private LightBulb bulb;
 
