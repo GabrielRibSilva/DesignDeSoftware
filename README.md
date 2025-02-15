@@ -21,7 +21,7 @@ class LightBulb {
     }
 }
 
-#### Criou uma class Switch sendo que a class LightBulb já fazia esse mesmo trabalho
+// Criou uma class Switch sendo que a class LightBulb já fazia esse mesmo trabalho
 
 class Switch {
     private LightBulb bulb;
