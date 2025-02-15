@@ -2,7 +2,6 @@
 Neste repositório vamos postar todas atividades realizadas na matéria de Design de Software
 
 ### Atividade 1 - DependencyInversionViolatio
-
 ```java
 public class DependencyInversionViolation {
     public static void main(String[] args) {
@@ -21,6 +20,8 @@ class LightBulb {
         System.out.println("LightBulb is OFF");
     }
 }
+
+#### Criou uma class Switch sendo que a class LightBulb já fazia esse mesmo trabalho
 
 class Switch {
     private LightBulb bulb;
