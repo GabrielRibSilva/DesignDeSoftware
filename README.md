@@ -3,7 +3,7 @@ Neste repositório vamos postar todas atividades realizadas na matéria de Desig
 
 # Atividade 1 - DependencyInversionViolatio
 
-`java
+```java
 public class DependencyInversionViolation {
     public static void main(String[] args) {
         LightBulb bulb = new LightBulb();
@@ -37,4 +37,4 @@ class Switch {
         bulb.turnOff();
     }
 }
-`
+```
