@@ -1,12 +1,22 @@
-public class HardCodedDependencies {
+public class DIPCompliant {
     public static void main(String[] args) {
-        GeneratePDF pdf = new generatePDF();
-        pdf.Report();
+        IReportGenerator reportGenerator = new GeneratePDF(); 
+        reportGenerator.generateReport();
     }
 }
 
-class GeneratePDF {
-    public void Report() {
+interface IReportGenerator {
+    void generateReport();
+}
+
+class GeneratePDF implements IReportGenerator {
+    public void generateReport() {
         System.out.println("Generating PDF Report...");
+    }
+}
+
+class GenerateCSV implements IReportGenerator {
+    public void generateReport() {
+        System.out.println("Generating CSV Report...");
     }
 }

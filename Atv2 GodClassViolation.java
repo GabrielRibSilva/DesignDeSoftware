@@ -1,10 +1,17 @@
-public class GodClassViolation {
+public class SRPCompliantApp  {
     public static void main(String[] args) {
-        UserAuthenticator authenticator = new UserAuthenticator();
-        DashboardLoader dashboardLoader = new DashboardLoader();
-        PaymentProcessor paymentProcessor = new PaymentProcessor();
-        ReportGenerator reportGenerator = new ReportGenerator();
+        ApplicationController appController = new ApplicationController();
+        appController.run();
+    }
+}
 
+class ApplicationController {
+    private final UserAuthenticator authenticator = new UserAuthenticator();
+    private final DashboardLoader dashboardLoader = new DashboardLoader();
+    private final PaymentProcessor paymentProcessor = new PaymentProcessor();
+    private final ReportGenerator reportGenerator = new ReportGenerator();
+
+    public void run() {
         authenticator.authenticateUser();
         dashboardLoader.loadDashboard();
         paymentProcessor.processPayments();
